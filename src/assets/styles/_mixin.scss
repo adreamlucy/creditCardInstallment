@@ -1,0 +1,26 @@
+@mixin flex ($direction, $row, $colum) {
+    width: 100%;
+    display: flex;
+   @if $direction {
+        flex-direction: $direction;
+    } else {
+        flex-direction: row;
+    }
+    justify-content: $row;
+    align-items: $colum;
+//   @if $justify_content {
+//       justify-content: $justify_content;
+//   } else {
+//     justify-content: flex-start;
+//   }
+//   @if $align-items {
+//       align-items: $align_items;
+//   } else {
+//       align-items: flex-start;
+//   }
+//   @if not $column {
+//     flex-direction: row; 
+//   } else {
+//     flex-direction: $column;
+//   }
+}
